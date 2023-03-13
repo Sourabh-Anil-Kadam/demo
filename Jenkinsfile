@@ -27,13 +27,14 @@
    stage('Deploy to Tomcat'){
      bat "copy target\\Jenkins.war \"${tomcatWeb}\\Jenkins.war\""
    }
-*/
+
 
 stage('Deploy to JBoss') { 
             steps {
                 sh 'cp C:/Users/sourabh.kadam/.jenkins/workspace/test1@script/412489e20ea20b3d08dc90bf5fa0af32aa803f036afef725459e1cc3f800fa14/day22.5/ebixproject.war C:/IndusJDE/jboss-eap-7.1/standalone/deployments/ebixproject.war'
             } 
         }
+        */
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
          bat "${tomcatBin}\\startup.bat"
