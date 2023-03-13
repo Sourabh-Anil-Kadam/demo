@@ -29,7 +29,7 @@
 
 stage('Deploy to JBoss') { 
             steps {
-                sh 'cp C:/Users/sourabh.kadam/.jenkins/workspace/test1@script/412489e20ea20b3d08dc90bf5fa0af32aa803f036afef725459e1cc3f800fa1/Jenkinsfile C:/IndusJDE/jboss-eap-7.1/standalone/deployments/Jenkins.war'
+                sh 'cp C:/Users/sourabh.kadam/.jenkins/workspace/test1@script/412489e20ea20b3d08dc90bf5fa0af32aa803f036afef725459e1cc3f800fa1/Jenkins.war C:/IndusJDE/jboss-eap-7.1/standalone/deployments/Jenkins.war'
             } 
         }
       stage ('Start Tomcat Server') {
