@@ -23,9 +23,11 @@
                )
 '''
    }*/
+/*
    stage('Deploy to Tomcat'){
      bat "copy target\\Jenkins.war \"${tomcatWeb}\\Jenkins.war\""
    }
+*/
 
 stage('Deploy to JBoss') { 
             steps {
