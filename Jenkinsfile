@@ -4,7 +4,7 @@ node{
    def jbossBin = 'C:\\IndusJDE\\jboss-eap-7.1\\bin'
    /* def tomcatStatus = '' */
    stage('SCM Checkout'){
-     git "https://github.com/Sourabh-Anil-Kadam/demo2.git"
+     git "https://github.com/Sourabh-Anil-Kadam/demo.git"
      withCredentials([gitUsernamePassword(credentialsId: 'git_user', gitToolName: 'Default')]) {
   bat 'git submodule update --init --recursive'
     }
